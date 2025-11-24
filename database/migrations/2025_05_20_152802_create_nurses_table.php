@@ -34,6 +34,10 @@ return new class extends Migration
             $table->dateTime('scheduled_time');
             $table->timestamps();
         });
+        Schema::create('service_type', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+        });
     }
 
     /**
